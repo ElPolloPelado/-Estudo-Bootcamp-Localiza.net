@@ -1,2 +1,2 @@
 # Estudos
-Treinando
+Apenas pra catalogar meus avanços.
