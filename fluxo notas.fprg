@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="arthu"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-26 05:15:25 "/>
+        <attribute name="created" value="YXJ0aHU7TEFQVE9QLTFQOEVCUFQ5OzIwMjEtMDItMjY7IjAzOjQ0OjE1ICI7Mjc4NQ=="/>
+        <attribute name="edited" value="YXJ0aHU7TEFQVE9QLTFQOEVCUFQ5OzIwMjEtMDItMjY7IjA1OjE1OjI1ICI7MjsyODk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Aluno" type="String" array="False" size=""/>
+            <declare name="Nota1, Nota2, Nota3, Nota4, Media, TotalNotas" type="Real" array="False" size=""/>
+            <input variable="Aluno"/>
+            <input variable="Nota1"/>
+            <input variable="Nota2"/>
+            <input variable="Nota3"/>
+            <input variable="Nota4"/>
+            <assign variable="Media" expression="(Nota1+Nota2+Nota3+Nota4)/4"/>
+            <assign variable="TotalNotas" expression="Nota1+Nota2+Nota3+Nota4"/>
+            <output expression="&quot;Seu nome &#233; : &quot; &amp; Aluno" newline="True"/>
+            <output expression="&quot;Sua Media &#233;: &quot; &amp; Media" newline="True"/>
+            <output expression="&quot;Seu total &#233; : &quot; &amp; TotalNotas" newline="True"/>
+            <if expression="Media&gt;=7">
+                <then>
+                    <output expression="&quot;Voc&#234; foi Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; foi reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
